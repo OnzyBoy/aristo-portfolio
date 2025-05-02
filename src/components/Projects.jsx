@@ -89,7 +89,7 @@ const Projects = () => {
                     onClick={() => window.open(project.partner.link, '_blank')}
                     className="partner-button"
                   >
-                    Partner: {project.partner.name}
+                    Collaborator: {project.partner.name}
                   </button>
                 </div>
               )}
