@@ -1,12 +1,27 @@
-# React + Vite
+# Aristo's Portfolio 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, dark-themed, glassmorphic portfolio built with React + Vite.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 👤 **About Me**: Personal intro, languages, and fun facts
+- 🛠️ **Skills**: Tech stack carousel (R, C#, Next.js, Kaggle, Excel, and more)
+- 💼 **Projects**: Card-based, single-column project showcase with tech tags
+- 🎓 **Education**: Timeline of academic background
+- 📜 **Certificates**: Dedicated section (coming soon!)
+- 📬 **Contact**: Social links and email
+- 🌑 **Dark Mode**: Consistent, accessible dark UI
+- 🖼️ **3D/Glassmorphic Cards**: Modern, animated card design
+- 📱 **Responsive**: Mobile-friendly, hamburger menu, and smooth layout
+- 🅰️ **Custom Font**: Neue Machina throughout
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+- React + Vite
+- Custom CSS (no frameworks)
+- Font: Neue Machina (local)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+> Built for learning, sharing, and connecting! 
+> 
+> _"Always curious, always exploring, and up for teaming up on cool, meaningful projects."_ ツ

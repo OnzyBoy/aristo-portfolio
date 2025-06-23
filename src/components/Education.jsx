@@ -19,15 +19,18 @@ const Education = () => {
     <section id="education" className="education-section">
       <h2>Education</h2>
       <div className="container">
-        <div className="education-grid">
-          {education.map((edu, index) => (
-            <div key={index} className="education-card">
-              <h3>{edu.degree}</h3>
-              <p className="school-name">{edu.school}</p>
-              <p className="graduation-year">{edu.year}</p>
-              {edu.grade && <p className="grade">Grade: {edu.grade}</p>}
-            </div>
-          ))}
+        <div className="education-3d-card">
+          <div className="education-glass"></div>
+          <div className="education-grid">
+            {education.map((edu, index) => (
+              <div key={index} className="education-card">
+                <h3>{edu.degree}</h3>
+                <p className="school-name">{edu.school}</p>
+                <p className="graduation-year">{edu.year}</p>
+                {edu.grade && <p className="grade">Grade: {edu.grade}</p>}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

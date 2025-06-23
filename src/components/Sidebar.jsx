@@ -1,30 +1,48 @@
-import React from "react";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import React, { useState } from "react";
+import { FaGithub, FaLinkedin, FaEnvelope, FaTimes, FaExpand } from "react-icons/fa";
 
 const Sidebar = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
-    <div className="sidebar">
-      <div className="profile-container">
-        <img src="/sideprofile.JPG" alt="Profile" className="profile-image" />
-        <h2 className="profile-name">Aristo Ayako</h2>
-        <p className="profile-title">Software Developer</p>
-      </div>
+    <>
+      <div className="parent">
+        <div className="card">
+          <div className="content">
+            <span className="title">Aristo Ayako</span>
 
-      <div className="sidebar-social-links">
-        <a href="https://github.com/OnzyBoy" className="sidebar-social-link">
-          <FaGithub /> GitHub
-        </a>
-        <a
-          href="https://www.linkedin.com/in/aristo-ayako/"
-          className="sidebar-social-link"
-        >
-          <FaLinkedin /> LinkedIn
-        </a>
-        <a href="mailto:ayakoaristo9@gmail.com" className="sidebar-social-link">
-          <FaEnvelope /> Email
-        </a>
+            <img
+              src="/sideprofile.JPG"
+              alt="Profile"
+              className="profile-image-3d"
+              onClick={() => setShowModal(true)}
+              title="Click to enlarge"
+            />
+            <span className="text">Juniour Data Analyst | Software Developer</span>
+          </div>
+          <div className="bottom">
+            <div className="social-buttons-container">
+              <a href="https://github.com/OnzyBoy" className="neumorph-btn" target="_blank" rel="noopener noreferrer">
+                <FaGithub className="svg" />
+              </a>
+              <a href="https://www.linkedin.com/in/aristo-ayako/" className="neumorph-btn" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin className="svg" />
+              </a>
+              <a href="mailto:ayakoaristo9@gmail.com" className="neumorph-btn">
+                <FaEnvelope className="svg" />
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+      {showModal && (
+        <div className="profile-modal-overlay" onClick={() => setShowModal(false)}>
+          <div className="profile-modal-card" onClick={e => e.stopPropagation()}>
+            <button className="profile-modal-close" onClick={() => setShowModal(false)}><FaTimes /></button>
+            <img src="/sideprofile.JPG" alt="Profile Large" className="profile-modal-image" />
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 

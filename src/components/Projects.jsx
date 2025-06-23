@@ -1,7 +1,7 @@
 import React from "react";
-import { 
-  SiNextdotjs, SiMysql, SiFirebase, 
-  SiReact, SiSolidity, SiGithub 
+import {
+  SiNextdotjs, SiMysql, SiFirebase,
+  SiReact, SiSolidity, SiGithub
 } from "react-icons/si";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
@@ -52,49 +52,52 @@ const Projects = () => {
     <section id="projects" className="projects-section">
       <h2>Projects</h2>
       <div className="container">
-        <div className="projects-grid">
-          {projects.map((project, index) => (
-            <div key={index} className="project-card">
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              <div className="technologies">
-                {project.technologies.map((tech, i) => (
-                  <div key={i} className="tech-tag">
-                    <span className="tech-icon">{tech.icon}</span>
-                    <span className="tech-name">{tech.name}</span>
-                  </div>
-                ))}
-              </div>
-              <div className="project-links">
-                <a
-                  href={project.githubLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="github-link"
-                >
-                  <SiGithub />
-                </a>
-                {project.livePreview && (
-                  <button
-                    onClick={() => window.open(project.livePreview, '_blank')}
-                    className="preview-button"
+        <div className="projects-3d-card">
+          <div className="projects-glass"></div>
+          <div className="projects-grid">
+            {projects.map((project, index) => (
+              <div key={index} className="project-card">
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+                <div className="technologies">
+                  {project.technologies.map((tech, i) => (
+                    <div key={i} className="tech-tag">
+                      <span className="tech-icon">{tech.icon}</span>
+                      <span className="tech-name">{tech.name}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="project-links">
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="github-link"
                   >
-                    <FaExternalLinkAlt /> Live Preview
-                  </button>
+                    <SiGithub />
+                  </a>
+                  {project.livePreview && (
+                    <button
+                      onClick={() => window.open(project.livePreview, '_blank')}
+                      className="preview-button"
+                    >
+                      <FaExternalLinkAlt /> Live Preview
+                    </button>
+                  )}
+                </div>
+                {project.partner && (
+                  <div className="project-partner">
+                    <button
+                      onClick={() => window.open(project.partner.link, '_blank')}
+                      className="partner-button"
+                    >
+                      Collaborator: {project.partner.name}
+                    </button>
+                  </div>
                 )}
               </div>
-              {project.partner && (
-                <div className="project-partner">
-                  <button
-                    onClick={() => window.open(project.partner.link, '_blank')}
-                    className="partner-button"
-                  >
-                    Collaborator: {project.partner.name}
-                  </button>
-                </div>
-              )}
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

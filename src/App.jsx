@@ -6,6 +6,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Education from "./components/Education";
+import Certificates from "./components/Certificates";
 import "./styles/main.css";
 
 function App() {
@@ -15,9 +16,10 @@ function App() {
       <main>
         <Sidebar />
         <About />
-        <Skills />
-        <Education />
         <Projects />
+        <Skills />
+        <Certificates />
+        <Education />
         <Contact />
       </main>
     </>

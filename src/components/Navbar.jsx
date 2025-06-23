@@ -1,25 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
   return (
-    <nav className="navbar">
+    <nav className="navbar glass-navbar">
       <div className="container">
-        <button className="menu-toggle" onClick={toggleMenu}>
-          <span className={`hamburger ${isMenuOpen ? "active" : ""}`}></span>
-        </button>
-
-        <div className={`nav-links ${isMenuOpen ? "active" : ""}`}>
-          <a href="#about" onClick={toggleMenu}>About</a>
-          <a href="#skills" onClick={toggleMenu}>Skills</a>
-          <a href="#education" onClick={toggleMenu}>Education</a>
-          <a href="#projects" onClick={toggleMenu}>Projects</a>
-          <a href="#contact" onClick={toggleMenu}>Contact</a>
+        <img src="/AA-logo.png" alt="AA Logo" className="navbar-logo" />
+        <input type="checkbox" id="checkbox" className="nav-checkbox" />
+        <label htmlFor="checkbox" className="toggle">
+          <div className="bars" id="bar1"></div>
+          <div className="bars" id="bar2"></div>
+          <div className="bars" id="bar3"></div>
+        </label>
+        <div className="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
     </nav>
