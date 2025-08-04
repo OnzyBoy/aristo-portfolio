@@ -8,6 +8,11 @@ const Education = () => {
       year: "Expected Graduation: 2025",
     },
     {
+      degree: "Certificate in Data Analytics and Visualization",
+      school: "Strathmore University",
+      year: "Expected Graduation: 2025",
+    },
+    {
       degree: "Highschool Diploma",
       school: "Light Academy Boys Nairobi",
       year: "Graduated: 2020",
