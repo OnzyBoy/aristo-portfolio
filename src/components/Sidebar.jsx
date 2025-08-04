@@ -17,7 +17,7 @@ const Sidebar = () => {
               onClick={() => setShowModal(true)}
               title="Click to enlarge"
             />
-            <span className="text">Juniour Data Analyst | Software Developer</span>
+            <span className="text">Junior Data Analyst | Software Developer</span>
           </div>
           <div className="bottom">
             <div className="social-buttons-container">
