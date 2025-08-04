@@ -27,7 +27,7 @@ const Sidebar = () => {
               <a href="https://www.linkedin.com/in/aristo-ayako/" className="neumorph-btn" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="svg" />
               </a>
-              <a href="mailto:ayakoaristo9@gmail.com" className="neumorph-btn">
+              <a href="mailto:ayakoaristo9@gmail.com" className="neumorph-btn" target="_blank" rel="noopener noreferrer">
                 <FaEnvelope className="svg" />
               </a>
             </div>

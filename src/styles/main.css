@@ -334,16 +334,16 @@ section h2 {
 .bottom .social-buttons-container .social-button .svg {
   width: 18px;
   height: 18px;
-  fill: #b0b3b8;
+  fill: #95ADCF;
   transition: fill 0.2s;
 }
 
 .bottom .social-buttons-container .social-button:hover {
-  background: #00894d;
+  background: #95ADCF;
 }
 
 .bottom .social-buttons-container .social-button:hover .svg {
-  fill: #fff;
+  fill: #23272F;
 }
 
 .parent:hover .card {
@@ -900,6 +900,18 @@ section h2 {
   letter-spacing: 2px;
   text-shadow: 0 2px 8px #20242a;
   text-align: center;
+}
+
+/* --- Social icon color consistency (Sidebar Profile) --- */
+.bottom .social-buttons-container .neumorph-btn .svg {
+  color: #95ADCF !important;
+  fill: #95ADCF !important;
+  transition: color 0.2s, fill 0.2s;
+}
+
+.bottom .social-buttons-container .neumorph-btn:hover .svg {
+  color: #23272F !important;
+  fill: #23272F !important;
 }
 
 /* === Responsive Design === */
