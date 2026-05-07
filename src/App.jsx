@@ -3,10 +3,9 @@ import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import About from "./components/About";
 import Skills from "./components/Skills";
-import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Education from "./components/Education";
-import Certificates from "./components/Certificates";
+import Resume from "./components/Resume";
 import "./styles/main.css";
 
 function App() {
@@ -16,10 +15,9 @@ function App() {
       <main>
         <Sidebar />
         <About />
-        <Projects />
         <Skills />
-        <Certificates />
         <Education />
+        <Resume />
         <Contact />
       </main>
     </>

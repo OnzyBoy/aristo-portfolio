@@ -7,24 +7,42 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => setIsMenuOpen(false);
+
+  const handleProjectsClick = () => {
+    closeMenu();
+    alert("Development in progress. Check back soon!");
+  };
+
   return (
-    <nav className="navbar glass-navbar">
-      <div className="container">
+    <aside className={`side-nav glass-navbar ${isMenuOpen ? "open" : ""}`}>
+      <div className="side-nav-inner">
         <img src="/AA-logo.png" alt="AA Logo" className="navbar-logo" />
-        <button className="toggle" onClick={toggleMenu}>
-          <div className={`bars ${isMenuOpen ? 'active' : ''}`} id="bar1"></div>
-          <div className={`bars ${isMenuOpen ? 'active' : ''}`} id="bar2"></div>
-          <div className={`bars ${isMenuOpen ? 'active' : ''}`} id="bar3"></div>
+        <button
+          className="toggle"
+          onClick={toggleMenu}
+          aria-label="Toggle navigation"
+        >
+          <div className={`bars ${isMenuOpen ? "active" : ""}`} id="bar1"></div>
+          <div className={`bars ${isMenuOpen ? "active" : ""}`} id="bar2"></div>
+          <div className={`bars ${isMenuOpen ? "active" : ""}`} id="bar3"></div>
         </button>
-        <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#education">Education</a>
-          <a href="#contact">Contact</a>
-        </div>
+        <nav className={`nav-links ${isMenuOpen ? "active" : ""}`}>
+          <a href="#about" onClick={closeMenu}>About</a>
+          <a href="#skills" onClick={closeMenu}>Skills</a>
+          <a href="#education" onClick={closeMenu}>Education</a>
+          <a href="#resume" onClick={closeMenu}>Resume</a>
+          <a href="#contact" onClick={closeMenu}>Contact</a>
+          <button
+            type="button"
+            className="nav-cta"
+            onClick={handleProjectsClick}
+          >
+            Projects & Certificates →
+          </button>
+        </nav>
       </div>
-    </nav>
+    </aside>
   );
 };
 

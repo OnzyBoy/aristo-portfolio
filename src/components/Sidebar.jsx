@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaGithub, FaLinkedin, FaEnvelope, FaTimes, FaExpand } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaTimes } from "react-icons/fa";
 
 const Sidebar = () => {
   const [showModal, setShowModal] = useState(false);
@@ -17,18 +17,33 @@ const Sidebar = () => {
               onClick={() => setShowModal(true)}
               title="Click to enlarge"
             />
-            <span className="text">Junior Data Analyst | Software Developer</span>
-          </div>
-          <div className="bottom">
-            <div className="social-buttons-container">
-              <a href="https://github.com/OnzyBoy" className="neumorph-btn" target="_blank" rel="noopener noreferrer">
-                <FaGithub className="svg" />
+            <span className="text">Data Analyst | Data Scientist | Software Developer</span>
+
+            <div className="social-links sidebar-social-links">
+              <a
+                href="https://github.com/OnzyBoy"
+                className="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <FaGithub />
               </a>
-              <a href="https://www.linkedin.com/in/aristo-ayako/" className="neumorph-btn" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin className="svg" />
+              <a
+                href="https://www.linkedin.com/in/aristo-ayako/"
+                className="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedin />
               </a>
-              <a href="mailto:ayakoaristo9@gmail.com" className="neumorph-btn" target="_blank" rel="noopener noreferrer">
-                <FaEnvelope className="svg" />
+              <a
+                href="mailto:ayakoaristo9@gmail.com"
+                className="social-link"
+                aria-label="Email"
+              >
+                <FaEnvelope />
               </a>
             </div>
           </div>

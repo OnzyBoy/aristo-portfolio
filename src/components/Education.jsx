@@ -2,15 +2,21 @@ import React from "react";
 
 const Education = () => {
   const education = [
+
+    {
+      degree: "Certificate in Data Science",
+      school: "GOMYCODE KENYA",
+      year: "Graduated: 2026",
+    },
     {
       degree: "Bachelor's Degree in Computer Science",
       school: "Catholic University of Eastern Africa",
-      year: "Expected Graduation: 2025",
+      year: "Graduated: 2025",
     },
     {
       degree: "Certificate in Data Analytics and Visualization",
       school: "Strathmore University",
-      year: "Expected Graduation: 2025",
+      year: "Graduated: 2025",
     },
     {
       degree: "Highschool Diploma",

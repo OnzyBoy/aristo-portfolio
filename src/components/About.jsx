@@ -10,9 +10,11 @@ const About = () => {
           <div className="about-3d-content">
             <p>
               Hi, I'm Aristo — a curious and committed Computer Science student
-              who loves bringing ideas to life through code. I'm passionate about
-              Software Development and Data Analytics, and I enjoy digging into data
-              to find stories and patterns that can help solve real-world problems.
+              who loves bringing ideas to life through code. With a background in
+              Software Development, I build data tools that aren't just insightful,
+              but also scalable and user-centric. I'm passionate about Software
+              Development and Data Analytics, and I enjoy digging into data to
+              find stories and patterns that can help solve real-world problems.
               Whether I'm building smooth, user-friendly web apps or exploring data
               to uncover meaningful insights, I'm all about learning, improving, and
               making things that matter (even if I sometimes have to battle a
