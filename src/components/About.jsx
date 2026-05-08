@@ -9,26 +9,20 @@ const About = () => {
           <div className="about-glass"></div>
           <div className="about-3d-content">
             <p>
-              Hi, I'm Aristo — a curious and committed Computer Science student
-              who loves bringing ideas to life through code. With a background in
-              Software Development, I build data tools that aren't just insightful,
-              but also scalable and user-centric. I'm passionate about Software
-              Development and Data Analytics, and I enjoy digging into data to
-              find stories and patterns that can help solve real-world problems.
-              Whether I'm building smooth, user-friendly web apps or exploring data
-              to uncover meaningful insights, I'm all about learning, improving, and
-              making things that matter (even if I sometimes have to battle a
-              few bugs along the way)
+              Hi, I'm Aristo — a Computer Science student passionate about
+              Software Development and Data Analytics. With a developer's
+              background, I build data tools that are insightful, scalable,
+              and user-centric — turning raw data into stories that solve
+              real-world problems.
             </p>
             <span>(｡•̀ᴗ-)✧</span>
             <p>
-              When I'm not knee-deep in code, you'll probably find me
-              chatting about cars, gaming, or swapping tips on how to survive
-              the chaos of life one meme at a time. I speak English and Kiswahili,
-              know a decent amount of Japanese, and I'm currently learning German
-              — because why not? I'm a big believer that learning never really stops...
-              unless the server goes down — then it's snack time. I'm always curious,
-              always exploring, and up for teaming up on cool, meaningful projects.
+              Off the keyboard, I'm into cars, gaming, and surviving life
+              one meme at a time. I speak English and Kiswahili, know some
+              Japanese, and I'm currently picking up German — because
+              learning never stops (unless the server goes down — then
+              it's snack time). Always curious, always building, and open
+              to collaborating on meaningful projects.
               <span>ツ</span>
             </p>
           </div>
