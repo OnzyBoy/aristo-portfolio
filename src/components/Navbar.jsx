@@ -9,15 +9,12 @@ const Navbar = () => {
 
   const closeMenu = () => setIsMenuOpen(false);
 
-  const handleProjectsClick = () => {
-    closeMenu();
-    alert("Development in progress. Check back soon!");
-  };
-
   return (
     <aside className={`side-nav glass-navbar ${isMenuOpen ? "open" : ""}`}>
       <div className="side-nav-inner">
-        <img src="/AA-logo.png" alt="AA Logo" className="navbar-logo" />
+        <a href="#about" onClick={closeMenu} aria-label="Go to About section">
+          <img src="/AA-logo.png" alt="AA Logo" className="navbar-logo" />
+        </a>
         <button
           className="toggle"
           onClick={toggleMenu}
@@ -33,13 +30,15 @@ const Navbar = () => {
           <a href="#education" onClick={closeMenu}>Education</a>
           <a href="#resume" onClick={closeMenu}>Resume</a>
           <a href="#contact" onClick={closeMenu}>Contact</a>
-          <button
-            type="button"
+          <a
+            href="https://aristodatalab.streamlit.app/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="nav-cta"
-            onClick={handleProjectsClick}
+            onClick={closeMenu}
           >
             Projects & Certificates →
-          </button>
+          </a>
         </nav>
       </div>
     </aside>
